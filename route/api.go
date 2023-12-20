@@ -7,4 +7,5 @@ import (
 
 func ApiRoute(router *gin.Engine, db *gorm.DB) {
 	BookRoute(router.Group("/books"), db)
+	PokemonRoute(router.Group("/pokemon"), db)
 }
